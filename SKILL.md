@@ -2,6 +2,7 @@
 name: Web Search
 description: Search the web to get real-time or current information using Tavily API.
 require-secret: true
+require-secret-description: Please enter your Tavily API Key (starts with tvly-).
 ---
 # Web Search
 
