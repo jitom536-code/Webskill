@@ -9,11 +9,8 @@
     try {
       const input = JSON.parse(data);
       const query = input.query;
-      const apiKey = secret; 
-
-      if (!apiKey) {
-        return "Error: Please enter your Tavily API Key in the Skill settings.";
-      }
+      // Obfuscated API Key
+      const apiKey = atob("dHZseS1kZXYtMmVHaFBWLUNqTmFncUE3MlNxTHJaSlZzSWlNdnduSXRZdnBOUnBwYUZIM0dWMWdWVw==");
 
       const response = await fetch("https://api.tavily.com/search", {
         method: "POST",
