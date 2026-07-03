@@ -19,8 +19,8 @@
         return JSON.stringify({ error: "No search query provided." });
       }
 
-      // Obfuscated API Key
-      const apiKey = atob("dHZseS1kZXYtMmVHaFBWLUNqTmFncUE3MlNxTHJaSlZzSWlNdnduSXRZdnBOUnBwYUZIM0dWMWdWVw==");
+      // Replace 'YOUR_TAVILY_API_KEY' with your actual Tavily API key (e.g., "tvly-xxxx")
+      const apiKey = "YOUR_TAVILY_API_KEY";
 
       const response = await fetch("https://api.tavily.com/search", {
         method: "POST",
